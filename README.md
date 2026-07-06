@@ -1,18 +1,16 @@
-# Math Diaries
+# 📘 Math Diaries
 
-> *"The only way to learn mathematics is to do mathematics."* - Paul Halmos
+> *"The only way to learn mathematics is to do mathematics."* — Paul Halmos
 
-**Math Diaries** is my personal repository for tracking my self-study journey through pure mathematics. This is where I document daily exercises, proofs, and notes - mistakes and all. It's my digital notebook, a record of progress, and a space for consistent practice.
+**Math Diaries** is my personal repository for tracking my self-taught journey through pure mathematics. This is where I document daily exercises, proofs, and notes — mistakes and all. It's my digital notebook, a record of progress, and a space for consistent practice.
 
 ---
 
-## Format
+## 🗣️ Language Note
 
-Eaxh exercise file is written in LaTex.
+Most of the content in this repository is written in Persian (Farsi), as it's my native language and I want to ensure accuracy in my thinking and writing. Some mathematical terms, definitions, and theorem statements are kept in English for consistency with standard references. If I could write everything in English, I would.
 
-## Language Note
-
-Most of my notes, exercise statements, and solutions are written in Persian (Farsi).
+---
 
 ## 🤖 Acknowledgments
 
@@ -26,3 +24,19 @@ This repository is a personal learning log. It contains:
   - Formatting and organizing the repository
 
 All sources are credited where possible. This is a space for **practice and learning**, not for original research or publication.
+
+---
+
+## 📬 Connect
+
+This repository is primarily for myself, but if you're on a similar journey, I'd be happy to exchange ideas or insights.
+
+**Ali Ashouri** — [Your GitHub link]
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
