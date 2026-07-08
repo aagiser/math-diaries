@@ -12,18 +12,20 @@ Most of the content in this repository is written in Persian (Farsi), as it's my
 
 ---
 
-## 🤖 Acknowledgments
+## 📚 Educational Purpose & Acknowledgments
 
-This repository is a personal learning log. It contains:
+**This repository is strictly for educational and personal learning purposes.**
 
-- **Exercises and problems** taken from various textbooks, lecture notes, and online resources. I did not design them — I am simply working through them to learn.
+It contains:
+
+- **Exercises and problems** taken from various textbooks, lecture notes, and online resources. I did not design them — I am simply working through them to learn. I do not claim ownership of these exercises.
 - **My own solutions and proofs** — these are my personal attempts to solve the problems. They are not guaranteed to be correct, complete, or elegant. Mistakes are part of the process.
 - **AI-assisted content** — I use AI tools to help with:
   - Writing and cleaning up LaTeX code
   - Translating exercise statements and notes between Persian and English
   - Formatting and organizing the repository
 
-All sources are credited where possible. This is a space for **practice and learning**, not for original research or publication.
+All sources are credited where possible. This repository is not affiliated with or endorsed by any publisher or author. It is a space for **practice and learning**, not for publication or distribution.
 
 ---
 
