@@ -1,0 +1,154 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath, amsthm, amssymb, geometry}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[pdfinfo=on]{xepersian}
+\settextfont{XB Niloofar}
+\setlatintextfont{Times New Roman}
+
+\geometry{margin=2.5cm}
+\linespread{1.2}
+
+\newtheoremstyle{exercise}{3pt}{3pt}{\normalfont}{}{\bfseries}{\\}{0pt}{}
+\theoremstyle{exercise}
+\newtheorem{exercise}{تمرین}
+\newtheorem{solution}{پاسخ}
+
+% غیرفعال کردن شماره‌گذاری
+\renewcommand{\theexercise}{}
+\renewcommand{\thesolution}{}
+
+\title{%
+	\Huge \textbf{تمرین} \\[0.3cm]
+	\Large مبانی ریاضیات - منطق گزاره‌ها
+}
+\author{علی عاشوری}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{وضعیت}
+	\begin{itemize}
+		\item \textbf{درس:} مبانی ریاضیات
+		\item \textbf{فصل:} منطق گزاره‌ها
+		\item \textbf{شماره‌ی تمرین:} ۱
+		\item \textbf{تاریخ حل:} \today
+		\item \textbf{وضعیت:} \textcolor{blue}{حل شده}
+		\item \textbf{منبع:} جزوه‌ی مبانی ریاضیات، دکتر محسن خانی، تمرین ۱.۲.
+	\end{itemize}
+	\rule{\textwidth}{0.4pt}
+	
+	\begin{exercise}
+		جدول ارزش هر یک از گزاره‌های زیر را رسم کنید.
+		\begin{enumerate}
+			\item $((p \rightarrow q) \rightarrow (\neg(q \rightarrow p)))$
+			\item $((p \rightarrow q) \rightarrow q)$
+			\item $((p \rightarrow q) \wedge (p \rightarrow (\neg q)))$
+			\item $(\neg (p \rightarrow q))$
+			\item $(\bot \rightarrow p)$
+			\item $(p \rightarrow \bot)$
+		\end{enumerate}
+	\end{exercise}
+	
+	\begin{solution}
+			۱.
+		\begin{latin}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c|c|c|c}
+					$p$ & $q$ & $(p \rightarrow q)$ & $(q \rightarrow p)$ & $(\neg(q \rightarrow p))$ & $((p \rightarrow q) \rightarrow (\neg(q \rightarrow p)))$ \\
+					\hline
+					T & T & T & T & F & F \\
+					T & F & F & T & F & T \\
+					F & T & T & F & T & T \\
+					F & F & T & T & F & F \\
+				\end{tabular}
+			\end{table}
+		\end{latin}
+		
+		\noindent
+		۲.
+		\begin{latin}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c|c}
+					$p$ & $q$ & $(p \rightarrow q)$ & $((p \rightarrow q) \rightarrow q)$ \\
+					\hline
+					T & T & T & T \\
+					T & F & F & T \\
+					F & T & T & T \\
+					F & F & T & F \\
+				\end{tabular}
+			\end{table}
+		\end{latin}
+		
+		\noindent
+		۳.
+		\begin{latin}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c|c|c|c}
+					$p$ & $q$ & $(\neg q)$ & $(p \rightarrow q)$ & $(p \rightarrow (\neg q))$ & $((p \rightarrow q) \wedge (p \rightarrow (\neg q)))$ \\
+					\hline
+					T & T & F & T & F & F \\
+					T & F & T & F & T & F \\
+					F & T & F & T & T & T \\
+					F & F & T & T & T & T \\
+				\end{tabular}
+			\end{table}
+		\end{latin}
+		
+		\noindent
+		۴.
+		\begin{latin}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c|c}
+					$p$ & $q$ & $(p \rightarrow q)$ & $(\neg (p \rightarrow q))$ \\
+					\hline
+					T & T & T & F \\
+					T & F & F & T \\
+					F & T & T & F \\
+					F & F & T & F \\
+				\end{tabular}
+			\end{table}
+		\end{latin}
+		
+		\noindent
+		۵.
+		\begin{latin}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c}
+					$\bot$ & $p$ & $(\bot \rightarrow p)$ \\
+					\hline
+					F & T & T \\
+					F & F & T
+				\end{tabular}
+			\end{table}
+		\end{latin}
+		
+		\noindent
+		۶.
+		\begin{latin}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c}
+					$p$ & $\bot$ & $(p \rightarrow \bot)$ \\
+					\hline
+					T & F & F \\
+					F & F & T
+				\end{tabular}
+			\end{table}
+		\end{latin}
+	\end{solution}
+	
+	\section*{یادداشت‌ها}
+	\begin{itemize}
+		\item گزاره‌ی ۱ یعنی $((p \rightarrow q) \rightarrow (\neg(q \rightarrow p)))$ فقط در صورتی درست است که فقط یکی از گزاره‌های p یا q درست باشد. به عبارت دیگر، این گزاره معادل یای مانع جمع است و با گزاره‌ی زیر معادل است:
+		$$ (p \vee q) \wedge (\neg (p \wedge q)) $$
+	\end{itemize}
+	
+\end{document}
