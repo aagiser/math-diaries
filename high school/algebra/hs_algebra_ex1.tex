@@ -1,0 +1,80 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath, amsthm, amssymb, geometry}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[pdfinfo=on]{xepersian}
+\settextfont{XB Niloofar}
+\setlatintextfont{Times New Roman}
+
+\geometry{margin=2.5cm}
+\linespread{1.2}
+
+\newtheoremstyle{exercise}{3pt}{3pt}{\normalfont}{}{\bfseries}{\\}{0pt}{}
+\theoremstyle{exercise}
+\newtheorem{exercise}{تمرین}
+\newtheorem{solution}{پاسخ}
+
+% غیرفعال کردن شماره‌گذاری
+\renewcommand{\theexercise}{}
+\renewcommand{\thesolution}{}
+
+\title{%
+	\Huge \textbf{تمرین} \\[0.3cm]
+	\Large جبر - اتحادها
+}
+\author{علی عاشوری}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{وضعیت}
+	\begin{itemize}
+		\item \textbf{درس:} جبر (دبیرستان)
+		\item \textbf{فصل:} اتحادها
+		\item \textbf{شماره‌ی تمرین:} ۱
+		\item \textbf{تاریخ حل:} \lr{July 10, 2026}
+		\item \textbf{وضعیت:} \textcolor{blue}{حل شده}
+		\item \textbf{منبع:} الهام‌گرفته از مسائل المپیاد ریاضی از کتاب جبر مهدی صفا.
+	\end{itemize}
+	\rule{\textwidth}{0.4pt}
+	
+	\begin{exercise}
+		فرض کنید
+		$r^2-2r-7=0$.
+		حاصل عددی
+		$(r-1)(r-3)(r+5)(r+7)$
+		را بدون یافتن $r$ به دست آورید.
+	\end{exercise}
+	
+	\bigskip
+	
+	\begin{solution}
+		با توجه به فرض داریم:
+		$r^2=2r+7$. \\
+		بنابراین:
+		$$(r-1)(r-3)=r^2-4r+3=-2r+10=-2(r-5)$$
+		$$(r-1)(r-3)(r+5)=-2(r-5)(r+5)=-2(r^2-25)=-2(2r-18)=-4(r-9)$$
+		$$(r-1)(r-3)(r+5)(r+7)=-4(r-9)(r+7)=-4(r^2-2r-63)=-4(-56)=224$$
+		\qed
+	\end{solution}
+	
+	\section*{یادداشت‌ها}
+	\begin{itemize}
+		\item
+		تفاوتی ندارد که پرانتزها را به چه ترتیب در هم ضرب کنیم. برای مثال، حالتی دیگر را برای ضرب در نظر بگیرید.
+		$$(r-3)(r+5)=r^2+2r-15=4r-8=4(r-2)$$
+		$$(r-3)(r+5)(r+7)=4(r-2)(r+7)=4(r^2+5r-14)=4(7r-7)=28(r-1)$$
+		$$(r-3)(r+5)(r+7)(r-1)=28(r-1)(r-1)=28(r^2-2r+1)=28(8)=224$$
+		\qed
+		
+		\item
+		به نظرم مهم‌تر از حل این مسئله این است که چطور چنین مسئله‌ای طرح کنیم. تمرین بالا را شخصاً بر اساس این مسئله از المپیاد ریاضی که در کتاب جبر مهدی صفا دیده‌ام، طرح کرده‌ام: «فرض کنید
+		$r^2-r-10=0$.
+		حاصل عددی
+		$(r+1)(r+2)(r-4)$
+		را بیابید.» اولاً معادله‌ی درجه‌ی دوم ذکرشده نباید ریشه‌های صحیح داشته باشد، تا مسئله به راحتی حل نشود. ثانیاً عبارت داده شده باید به گونه‌ای باشد که در نهایت به اتحاد جمله مشترکی برسیم که حاصل جمع جمله‌های عددی آن‌ها (جملات غیر مشترک) برابر با ضریب $r$ در معادله‌ی درجه‌ی دوم شود. در این صورت $r$ حذف می‌شود و فقط عدد باقی می‌ماند.
+	\end{itemize}
+	
+\end{document}
