@@ -8,7 +8,8 @@
 \geometry{margin=2.5cm}
 \linespread{1.2}
 
-\theoremstyle{plain}
+\newtheoremstyle{exercise}{3pt}{3pt}{\normalfont}{}{\bfseries}{\\}{0pt}{}
+\theoremstyle{exercise}
 \newtheorem{exercise}{تمرین}
 \newtheorem{solution}{پاسخ}
 
@@ -32,7 +33,7 @@
 		\item \textbf{درس:} [نام درس]
 		\item \textbf{فصل:} [نام فصل]
 		\item \textbf{شماره‌ی تمرین:} [شماره]
-		\item \textbf{تاریخ حل:} \today
+		\item \textbf{تاریخ حل:} \lr{Month 00, 0000}
 		\item \textbf{وضعیت:} \textcolor{blue}{حل شده} / \textcolor{orange}{در حال حل} / \textcolor{red}{حل نشده}
 		\item \textbf{منبع:} [در صورت وجود]
 	\end{itemize}
@@ -41,6 +42,8 @@
 	\begin{exercise}
 		[متن تمرین]
 	\end{exercise}
+
+	\bigskip
 	
 	\begin{solution}
 		[جواب یا اثبات]
